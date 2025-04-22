@@ -1,1 +1,1 @@
-worker: python 85.py
+worker: python nds.py
