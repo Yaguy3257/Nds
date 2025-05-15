@@ -3,12 +3,11 @@ from aiogram import Bot, Dispatcher, F, types
 from aiogram.types import Message
 from aiogram.enums import ParseMode
 
-BOT_TOKEN = "7988149741:AAEVJ1b07cmBsVTWDTlGmLJDh7-j_HOEfv0"  # Замени на свой токен
+BOT_TOKEN = "7988149741:AAEVJ1b07cmBsVTWDTlGmLJDh7-j_HOEfv0"
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 
-# Функция форматирования чисел (например, 1000000 → 1 000 000)
 def format_number(number):
     try:
         return f"{number:,.0f}".replace(",", " ").replace(".", ",")
